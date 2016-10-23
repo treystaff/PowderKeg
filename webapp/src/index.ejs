@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" class="" <% if(htmlWebpackPlugin.files.manifest) { %> manifest="<%= htmlWebpackPlugin.files.manifest %>"<% } %>>
+
+<head>
+  <meta charset="utf-8">
+  <title><%= htmlWebpackPlugin.options.title %></title>
+
+</head>
+
+<body>
+  <div id="pwdkeg"></div>
+
+  <% if (htmlWebpackPlugin.options.devServer) { %>
+  <script src="<%= htmlWebpackPlugin.options.devServer%>/webpack-dev-server.js"></script>
+  <% } %>
+
+</body>
+</html>
